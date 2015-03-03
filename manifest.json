@@ -10,8 +10,8 @@
   },
   "default_locale": "en",
   "background": {
-    "page": "src/bg/background.html",
-    "persistent": false
+    "page": "src/bg/background.html"
+    // "persistent": false
   },
   "page_action": {
     "default_icon": "icons/icon19.png",
@@ -20,25 +20,25 @@
   },
   "permissions": [
     "contextMenus",
-    "https://*/* ",
-    " http://linkedin.com/*"
-  ],
-  "content_scripts": [
-    {
-      "matches": [
-        "https://www.google.com/*"
-      ],
-      "css": [
-        "src/inject/inject.css"
-      ]
-    },
-    {
-      "matches": [
-        "https://www.google.com/*"
-      ],
-      "js": [
-        "src/inject/inject.js"
-      ]
-    }
+    "https://*/* "
   ]
+  // "content_scripts": [
+  //   {
+  //     "matches": [
+  //       "https://www.linkedin.com/*",
+  //       "https://www.linkedin.com"
+  //     ],
+  //     "css": [
+  //       "src/inject/inject.css"
+  //     ]
+  //   },
+  //   {
+  //     "matches": [
+  //       "https://www.linkedin.com/*"
+  //     ],
+  //     "js": [
+  //       "src/inject/inject.js"
+  //     ]
+  //   }
+  // ]
 }
